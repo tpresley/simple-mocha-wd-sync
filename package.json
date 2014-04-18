@@ -1,0 +1,33 @@
+{
+  "name": "simple-mocha-wd-sync",
+  "version": "0.0.38",
+  "description": "Package to make writing Selenium tests using Mocha and wd-sync easier and with less boiler-plate and setup code",
+  "main": "./lib/simple-mocha-wd-sync",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "node installer.js",
+    "build": "coffee --bare --compile --output lib src/*.coffee",
+    "prepublish": "coffee --bare --compile --output lib src/*.coffee"
+  },
+  "bin": {
+    "swd": "./bin/simple-mocha-wd-sync.sh"
+  },
+  "author": "Troy Presley <troy.presley@gmail.com>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "package-script": "~0.0.6",
+    "coffee-script": "~1.7.0",
+    "should": "~2.0.1",
+    "wd-sync": "~1.2.0",
+    "wd-zombie": "0.0.6",
+    "colors": "~0.6.2",
+    "fibers": "~1.0.1",
+    "underscore": "~1.5.2",
+    "commander": "1.0.4"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "installer.js"
+  ]
+}
